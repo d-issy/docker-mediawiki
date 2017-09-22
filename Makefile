@@ -17,10 +17,10 @@ mediawiki:
 build: mediawiki
 	docker-compose build
 
-up:
+up: mediawiki
 	docker-compose up
 
-up/silent:
+up/silent: mediawiki
 	docker-compose up -d
 
 down:
