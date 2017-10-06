@@ -4,7 +4,7 @@ services:
         restart: always
         container_name: mediawiki
         build: 
-            context: ./
+            context: ./dockerfiles/
             dockerfile: app.docker
         volumes:
             - ./mediawiki:/var/www/html
@@ -26,7 +26,7 @@ services:
         restart: always
         container_name: mediawiki-nginx
         build:
-            context: ./
+            context: ./dockerfiles/
             dockerfile: nginx.docker
         ports:
             - "80:80"
