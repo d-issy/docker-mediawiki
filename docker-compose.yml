@@ -20,8 +20,8 @@ services:
         volumes:
             - ./db-data:/var/lib/mysql
         environment:
-            MYSQL_ROOT_PASSWORD: "pass"
             MYSQL_DATABASE: "my_wiki"
+            MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     nginx:
         restart: always
         container_name: mediawiki-nginx

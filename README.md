@@ -23,5 +23,4 @@ make down
 
 ## Mediawiki Setup Hint
 - db-host: db
-- password: pass
 - other: default
