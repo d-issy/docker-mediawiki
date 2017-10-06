@@ -27,7 +27,9 @@ down:
 	docker-compose down
 
 clean:
-	rm -rf mediawiki
-	rm -rf db-data
+	@rm -vrf mediawiki
+	@rm -vrf db-data
+	@rm -vrf mediawiki-1.29.1.tar.gz
+	@rm -vrf mediawiki-1.29.1
 
 
