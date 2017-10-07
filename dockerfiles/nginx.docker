@@ -1,2 +1,0 @@
-FROM nginx:stable-alpine
-ADD settings/nginx/server.conf /etc/nginx/conf.d/default.conf
