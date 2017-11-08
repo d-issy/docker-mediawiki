@@ -1,6 +1,6 @@
 FROM php:7-fpm-alpine
 RUN apk --no-cache upgrade \
-    && apk --no-cache add git imagemagick diffutils icu-dev \
+    && apk --no-cache add git imagemagick diffutils icu-dev lua \
     && docker-php-ext-install pdo_mysql mysqli mbstring opcache intl \
     && docker-php-ext-configure opcache --enable-opcache \
     && pecl install apcu && docker-php-ext-enable apcu
