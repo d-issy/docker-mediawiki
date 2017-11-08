@@ -7,6 +7,8 @@ services:
             context: ./dockerfiles/
             dockerfile: app.docker
         volumes:
+            - ./configs/app/php.ini:/etc/php/php7.0/fpm/php.ini
+            - ./configs/app/php-fpm.conf:/etc/php/php7.0/fpm/php-fpm.conf
             - ./mediawiki:/var/www/html
         depends_on:
             - db
